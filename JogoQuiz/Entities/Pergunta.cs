@@ -13,17 +13,17 @@ namespace JogoQuiz.Entities
         public string OptionA { get; set; }
         public string OptionB { get; set; }
         public string OptionC { get; set; }
-        public string OpritonD { get; set; }
+        public string OptionD { get; set; }
         public string RightOption { get; set; }
 
-        public Pergunta(int number, string question, string optionA, string optionB, string optionC, string opritonD, string rightOption)
+        public Pergunta(int number, string question, string optionA, string optionB, string optionC, string optionD, string rightOption)
         {
             Number = number;
             Question = question;
             OptionA = optionA;
             OptionB = optionB;
             OptionC = optionC;
-            OpritonD = opritonD;
+            OptionD = optionD;
             RightOption = rightOption;
         }
 

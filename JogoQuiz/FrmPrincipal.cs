@@ -23,5 +23,23 @@ namespace JogoQuiz
         {
             Application.Exit();
         }
+
+        private void Btn1_Click(object sender, EventArgs e)
+        {
+            Jogo jogo = new Jogo();
+            jogo.CreatePergunta(1);
+        }
+
+        private void Btn2_Click(object sender, EventArgs e)
+        {
+            Jogo jogo = new Jogo();
+            jogo.CreatePergunta(2);
+        }
+
+        private void Btn3_Click(object sender, EventArgs e)
+        {
+            Jogo jogo = new Jogo();
+            jogo.CreatePergunta(3);
+        }
     }
 }

@@ -109,13 +109,14 @@
             // 
             this.btn1.BackColor = System.Drawing.Color.White;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn1.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(22, 173);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(70, 62);
             this.btn1.TabIndex = 3;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // label2
             // 
@@ -132,31 +133,33 @@
             // 
             this.btn2.BackColor = System.Drawing.Color.White;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn2.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(107, 173);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(70, 62);
             this.btn2.TabIndex = 5;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.Btn2_Click);
             // 
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.White;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn3.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(194, 173);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(70, 62);
             this.btn3.TabIndex = 6;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.Btn3_Click);
             // 
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.Color.White;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn6.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.Location = new System.Drawing.Point(452, 173);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(70, 62);
@@ -168,7 +171,7 @@
             // 
             this.btn5.BackColor = System.Drawing.Color.White;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn5.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.Location = new System.Drawing.Point(365, 173);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(70, 62);
@@ -180,7 +183,7 @@
             // 
             this.btn4.BackColor = System.Drawing.Color.White;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn4.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(280, 173);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(70, 62);
@@ -192,7 +195,7 @@
             // 
             this.btn9.BackColor = System.Drawing.Color.White;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn9.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.Location = new System.Drawing.Point(708, 173);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(70, 62);
@@ -204,7 +207,7 @@
             // 
             this.btn8.BackColor = System.Drawing.Color.White;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn8.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.Location = new System.Drawing.Point(621, 173);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(70, 62);
@@ -216,7 +219,7 @@
             // 
             this.btn7.BackColor = System.Drawing.Color.White;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn7.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.Location = new System.Drawing.Point(536, 173);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(70, 62);
@@ -228,7 +231,7 @@
             // 
             this.btn10.BackColor = System.Drawing.Color.White;
             this.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn10.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn10.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn10.Location = new System.Drawing.Point(795, 173);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(70, 62);
@@ -240,7 +243,7 @@
             // 
             this.btn11.BackColor = System.Drawing.Color.White;
             this.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn11.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn11.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn11.Location = new System.Drawing.Point(22, 263);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(70, 62);
@@ -252,7 +255,7 @@
             // 
             this.btn12.BackColor = System.Drawing.Color.White;
             this.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn12.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn12.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn12.Location = new System.Drawing.Point(107, 263);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(70, 62);
@@ -264,7 +267,7 @@
             // 
             this.btn13.BackColor = System.Drawing.Color.White;
             this.btn13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn13.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn13.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn13.Location = new System.Drawing.Point(194, 263);
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(70, 62);
@@ -276,7 +279,7 @@
             // 
             this.btn14.BackColor = System.Drawing.Color.White;
             this.btn14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn14.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn14.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn14.Location = new System.Drawing.Point(280, 263);
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(70, 62);
@@ -288,7 +291,7 @@
             // 
             this.btn15.BackColor = System.Drawing.Color.White;
             this.btn15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn15.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn15.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn15.Location = new System.Drawing.Point(365, 263);
             this.btn15.Name = "btn15";
             this.btn15.Size = new System.Drawing.Size(70, 62);
@@ -300,7 +303,7 @@
             // 
             this.btn16.BackColor = System.Drawing.Color.White;
             this.btn16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn16.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn16.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn16.Location = new System.Drawing.Point(452, 263);
             this.btn16.Name = "btn16";
             this.btn16.Size = new System.Drawing.Size(70, 62);
@@ -312,7 +315,7 @@
             // 
             this.btn17.BackColor = System.Drawing.Color.White;
             this.btn17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn17.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn17.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn17.Location = new System.Drawing.Point(536, 263);
             this.btn17.Name = "btn17";
             this.btn17.Size = new System.Drawing.Size(70, 62);
@@ -324,7 +327,7 @@
             // 
             this.btn18.BackColor = System.Drawing.Color.White;
             this.btn18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn18.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn18.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn18.Location = new System.Drawing.Point(621, 263);
             this.btn18.Name = "btn18";
             this.btn18.Size = new System.Drawing.Size(70, 62);
@@ -336,7 +339,7 @@
             // 
             this.btn19.BackColor = System.Drawing.Color.White;
             this.btn19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn19.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn19.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn19.Location = new System.Drawing.Point(708, 263);
             this.btn19.Name = "btn19";
             this.btn19.Size = new System.Drawing.Size(70, 62);
@@ -348,7 +351,7 @@
             // 
             this.btn20.BackColor = System.Drawing.Color.White;
             this.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn20.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn20.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn20.Location = new System.Drawing.Point(795, 263);
             this.btn20.Name = "btn20";
             this.btn20.Size = new System.Drawing.Size(70, 62);
@@ -360,7 +363,7 @@
             // 
             this.btn30.BackColor = System.Drawing.Color.White;
             this.btn30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn30.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn30.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn30.Location = new System.Drawing.Point(795, 355);
             this.btn30.Name = "btn30";
             this.btn30.Size = new System.Drawing.Size(70, 62);
@@ -372,7 +375,7 @@
             // 
             this.btn29.BackColor = System.Drawing.Color.White;
             this.btn29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn29.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn29.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn29.Location = new System.Drawing.Point(708, 355);
             this.btn29.Name = "btn29";
             this.btn29.Size = new System.Drawing.Size(70, 62);
@@ -384,7 +387,7 @@
             // 
             this.btn28.BackColor = System.Drawing.Color.White;
             this.btn28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn28.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn28.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn28.Location = new System.Drawing.Point(621, 355);
             this.btn28.Name = "btn28";
             this.btn28.Size = new System.Drawing.Size(70, 62);
@@ -396,7 +399,7 @@
             // 
             this.btn27.BackColor = System.Drawing.Color.White;
             this.btn27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn27.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn27.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn27.Location = new System.Drawing.Point(536, 355);
             this.btn27.Name = "btn27";
             this.btn27.Size = new System.Drawing.Size(70, 62);
@@ -408,7 +411,7 @@
             // 
             this.btn26.BackColor = System.Drawing.Color.White;
             this.btn26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn26.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn26.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn26.Location = new System.Drawing.Point(452, 355);
             this.btn26.Name = "btn26";
             this.btn26.Size = new System.Drawing.Size(70, 62);
@@ -420,7 +423,7 @@
             // 
             this.btn25.BackColor = System.Drawing.Color.White;
             this.btn25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn25.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn25.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn25.Location = new System.Drawing.Point(365, 355);
             this.btn25.Name = "btn25";
             this.btn25.Size = new System.Drawing.Size(70, 62);
@@ -432,7 +435,7 @@
             // 
             this.btn24.BackColor = System.Drawing.Color.White;
             this.btn24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn24.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn24.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn24.Location = new System.Drawing.Point(280, 355);
             this.btn24.Name = "btn24";
             this.btn24.Size = new System.Drawing.Size(70, 62);
@@ -444,7 +447,7 @@
             // 
             this.btn23.BackColor = System.Drawing.Color.White;
             this.btn23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn23.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn23.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn23.Location = new System.Drawing.Point(194, 355);
             this.btn23.Name = "btn23";
             this.btn23.Size = new System.Drawing.Size(70, 62);
@@ -456,7 +459,7 @@
             // 
             this.btn22.BackColor = System.Drawing.Color.White;
             this.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn22.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn22.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn22.Location = new System.Drawing.Point(107, 355);
             this.btn22.Name = "btn22";
             this.btn22.Size = new System.Drawing.Size(70, 62);
@@ -468,7 +471,7 @@
             // 
             this.btn21.BackColor = System.Drawing.Color.White;
             this.btn21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn21.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn21.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn21.Location = new System.Drawing.Point(22, 355);
             this.btn21.Name = "btn21";
             this.btn21.Size = new System.Drawing.Size(70, 62);
@@ -480,7 +483,7 @@
             // 
             this.btn40.BackColor = System.Drawing.Color.White;
             this.btn40.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn40.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn40.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn40.Location = new System.Drawing.Point(795, 449);
             this.btn40.Name = "btn40";
             this.btn40.Size = new System.Drawing.Size(70, 62);
@@ -492,7 +495,7 @@
             // 
             this.btn39.BackColor = System.Drawing.Color.White;
             this.btn39.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn39.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn39.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn39.Location = new System.Drawing.Point(708, 449);
             this.btn39.Name = "btn39";
             this.btn39.Size = new System.Drawing.Size(70, 62);
@@ -504,7 +507,7 @@
             // 
             this.btn38.BackColor = System.Drawing.Color.White;
             this.btn38.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn38.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn38.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn38.Location = new System.Drawing.Point(621, 449);
             this.btn38.Name = "btn38";
             this.btn38.Size = new System.Drawing.Size(70, 62);
@@ -516,7 +519,7 @@
             // 
             this.btn37.BackColor = System.Drawing.Color.White;
             this.btn37.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn37.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn37.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn37.Location = new System.Drawing.Point(536, 449);
             this.btn37.Name = "btn37";
             this.btn37.Size = new System.Drawing.Size(70, 62);
@@ -528,7 +531,7 @@
             // 
             this.btn36.BackColor = System.Drawing.Color.White;
             this.btn36.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn36.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn36.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn36.Location = new System.Drawing.Point(452, 449);
             this.btn36.Name = "btn36";
             this.btn36.Size = new System.Drawing.Size(70, 62);
@@ -540,7 +543,7 @@
             // 
             this.btn35.BackColor = System.Drawing.Color.White;
             this.btn35.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn35.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn35.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn35.Location = new System.Drawing.Point(365, 449);
             this.btn35.Name = "btn35";
             this.btn35.Size = new System.Drawing.Size(70, 62);
@@ -552,7 +555,7 @@
             // 
             this.btn34.BackColor = System.Drawing.Color.White;
             this.btn34.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn34.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn34.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn34.Location = new System.Drawing.Point(280, 449);
             this.btn34.Name = "btn34";
             this.btn34.Size = new System.Drawing.Size(70, 62);
@@ -564,7 +567,7 @@
             // 
             this.btn33.BackColor = System.Drawing.Color.White;
             this.btn33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn33.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn33.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn33.Location = new System.Drawing.Point(194, 449);
             this.btn33.Name = "btn33";
             this.btn33.Size = new System.Drawing.Size(70, 62);
@@ -576,7 +579,7 @@
             // 
             this.btn32.BackColor = System.Drawing.Color.White;
             this.btn32.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn32.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn32.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn32.Location = new System.Drawing.Point(107, 449);
             this.btn32.Name = "btn32";
             this.btn32.Size = new System.Drawing.Size(70, 62);
@@ -588,7 +591,7 @@
             // 
             this.btn31.BackColor = System.Drawing.Color.White;
             this.btn31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn31.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn31.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn31.Location = new System.Drawing.Point(22, 449);
             this.btn31.Name = "btn31";
             this.btn31.Size = new System.Drawing.Size(70, 62);
@@ -600,7 +603,7 @@
             // 
             this.btn50.BackColor = System.Drawing.Color.White;
             this.btn50.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn50.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn50.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn50.Location = new System.Drawing.Point(795, 544);
             this.btn50.Name = "btn50";
             this.btn50.Size = new System.Drawing.Size(70, 62);
@@ -612,7 +615,7 @@
             // 
             this.btn49.BackColor = System.Drawing.Color.White;
             this.btn49.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn49.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn49.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn49.Location = new System.Drawing.Point(708, 544);
             this.btn49.Name = "btn49";
             this.btn49.Size = new System.Drawing.Size(70, 62);
@@ -624,7 +627,7 @@
             // 
             this.btn48.BackColor = System.Drawing.Color.White;
             this.btn48.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn48.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn48.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn48.Location = new System.Drawing.Point(621, 544);
             this.btn48.Name = "btn48";
             this.btn48.Size = new System.Drawing.Size(70, 62);
@@ -636,7 +639,7 @@
             // 
             this.btn47.BackColor = System.Drawing.Color.White;
             this.btn47.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn47.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn47.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn47.Location = new System.Drawing.Point(536, 544);
             this.btn47.Name = "btn47";
             this.btn47.Size = new System.Drawing.Size(70, 62);
@@ -648,7 +651,7 @@
             // 
             this.btn46.BackColor = System.Drawing.Color.White;
             this.btn46.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn46.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn46.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn46.Location = new System.Drawing.Point(452, 544);
             this.btn46.Name = "btn46";
             this.btn46.Size = new System.Drawing.Size(70, 62);
@@ -660,7 +663,7 @@
             // 
             this.btn45.BackColor = System.Drawing.Color.White;
             this.btn45.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn45.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn45.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn45.Location = new System.Drawing.Point(365, 544);
             this.btn45.Name = "btn45";
             this.btn45.Size = new System.Drawing.Size(70, 62);
@@ -672,7 +675,7 @@
             // 
             this.btn44.BackColor = System.Drawing.Color.White;
             this.btn44.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn44.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn44.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn44.Location = new System.Drawing.Point(280, 544);
             this.btn44.Name = "btn44";
             this.btn44.Size = new System.Drawing.Size(70, 62);
@@ -684,7 +687,7 @@
             // 
             this.btn43.BackColor = System.Drawing.Color.White;
             this.btn43.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn43.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn43.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn43.Location = new System.Drawing.Point(194, 544);
             this.btn43.Name = "btn43";
             this.btn43.Size = new System.Drawing.Size(70, 62);
@@ -696,7 +699,7 @@
             // 
             this.btn42.BackColor = System.Drawing.Color.White;
             this.btn42.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn42.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn42.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn42.Location = new System.Drawing.Point(107, 544);
             this.btn42.Name = "btn42";
             this.btn42.Size = new System.Drawing.Size(70, 62);
@@ -708,7 +711,7 @@
             // 
             this.btn41.BackColor = System.Drawing.Color.White;
             this.btn41.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn41.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn41.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn41.Location = new System.Drawing.Point(22, 544);
             this.btn41.Name = "btn41";
             this.btn41.Size = new System.Drawing.Size(70, 62);
