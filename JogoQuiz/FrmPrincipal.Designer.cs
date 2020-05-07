@@ -830,7 +830,6 @@
             this.label3.Size = new System.Drawing.Size(104, 30);
             this.label3.TabIndex = 63;
             this.label3.Text = "Turno:";
-            this.label3.Visible = false;
             // 
             // lblTurno
             // 
@@ -841,7 +840,6 @@
             this.lblTurno.Name = "lblTurno";
             this.lblTurno.Size = new System.Drawing.Size(0, 22);
             this.lblTurno.TabIndex = 64;
-            this.lblTurno.Visible = false;
             // 
             // FrmPrincipal
             // 
