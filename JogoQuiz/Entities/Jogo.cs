@@ -9,7 +9,6 @@ namespace JogoQuiz.Entities
     class Jogo
     {
         FrmPrincipal form = new FrmPrincipal();
-        public static FrmPergunta frmPergunta = new FrmPergunta();
         public int PerguntaAtual { get; set; }
         public static string RespostaCertaAtual { get; set; }
         public List<Pergunta> pergunta = new List<Pergunta>();
@@ -80,13 +79,14 @@ namespace JogoQuiz.Entities
 
         public void CreatePergunta(int numero)
         {
-            formPergunta.Show();
+            FrmPergunta frmPergunta = new FrmPergunta();
+            frmPergunta.Show();
             PerguntaAtual = numero;
-            formPergunta.lblPergunta.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.Question));
-            formPergunta.btnA.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionA));
-            formPergunta.btnB.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionB));
-            formPergunta.btnC.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionC));
-            formPergunta.btnD.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionD));
+            frmPergunta.lblPergunta.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.Question));
+            frmPergunta.btnA.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionA));
+            frmPergunta.btnB.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionB));
+            frmPergunta.btnC.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionC));
+            frmPergunta.btnD.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionD));
             RespostaCertaAtual = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.RightOption));
         }
 
