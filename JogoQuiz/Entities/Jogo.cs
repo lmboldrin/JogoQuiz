@@ -8,7 +8,11 @@ namespace JogoQuiz.Entities
 {
     class Jogo
     {
-        List<Pergunta> pergunta = new List<Pergunta>();
+        FrmPrincipal form = new FrmPrincipal();
+        public static FrmPergunta frmPergunta = new FrmPergunta();
+        public int PerguntaAtual { get; set; }
+        public static string RespostaCertaAtual { get; set; }
+        public List<Pergunta> pergunta = new List<Pergunta>();
 
         public Jogo()
         {
@@ -36,7 +40,6 @@ namespace JogoQuiz.Entities
 
         public void CreateTeams(int qtd)
         {
-            FrmPrincipal form = new FrmPrincipal();
             form.Show();
             if (qtd == 1)
             {
@@ -77,14 +80,14 @@ namespace JogoQuiz.Entities
 
         public void CreatePergunta(int numero)
         {
-            FrmPergunta form = new FrmPergunta();
-            form.Show();
-            form.lblPergunta.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.Question));
-            form.btnA.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionA));
-            form.btnB.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionB));
-            form.btnC.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionC));
-            form.btnD.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionD));
-            
+            formPergunta.Show();
+            PerguntaAtual = numero;
+            formPergunta.lblPergunta.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.Question));
+            formPergunta.btnA.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionA));
+            formPergunta.btnB.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionB));
+            formPergunta.btnC.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionC));
+            formPergunta.btnD.Text = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.OptionD));
+            RespostaCertaAtual = ObtainContent(pergunta.Where(p => p.Number == numero).Select(p => p.RightOption));
         }
 
 
@@ -97,6 +100,18 @@ namespace JogoQuiz.Entities
                 return content;
             }
             return "0";
+        }
+
+        public static bool VerificarResposta(string answer)
+        {
+            if (Jogo.RespostaCertaAtual == answer)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

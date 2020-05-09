@@ -28,14 +28,5 @@ namespace JogoQuiz.Entities
         }
 
 
-        public bool ConfirmAnswer(string answer)
-        {
-            if(answer == RightOption)
-            {
-                return true;
-            }
-
-            return false;
-        }
     }
 }
